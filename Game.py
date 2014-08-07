@@ -28,7 +28,7 @@ class Game(object):
         self.running = False
         
     def start(self):
-        while self.gen_number < 20: #until there is a way to stop it 
+        while self.gen_number < 130: #until there is a way to stop it 
             self.run_life()
             self.gen_number += 1
             self.display()

@@ -70,7 +70,7 @@ class LifeNode(object):
         # if you have a better idea for this icons then you are welcomed to 
         # changed them
         if self.alive:
-            return '▓'
+            return '▓ '
         else:
-            return '░'
+            return '░ '
         #return "(" +str(self.x_pos) + "," + str(self.y_pos) + ")"

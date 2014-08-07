@@ -26,5 +26,5 @@ class GameRules(object):
     time_between_gen = 1
     
     # size of the grid, it's a square so it'll be x*x
-    grid_size = 10
+    grid_size = 20
         

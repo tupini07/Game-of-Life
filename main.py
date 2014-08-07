@@ -34,4 +34,12 @@ If you want to know more visit: http://en.wikipedia.org/wiki/Conway%27s_Game_of_
 
 if __name__ == '__main__':
     game = Game()   
+    ''' this is a R-pentomino, if you want to see it just uncomment this, and remember to turn
+        injector off, your grid needs to be mode than 5 in size
+    game.toggle_cel(3, 1)
+    game.toggle_cel(2, 2)
+    game.toggle_cel(4, 1)
+    game.toggle_cel(3, 2)
+    game.toggle_cel(3, 3)
+    '''
     game.start()
