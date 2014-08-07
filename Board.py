@@ -12,7 +12,6 @@ class Board(object):
         Constructor
         '''
         self.node_array = []  # so it doesn't have to scan all the matrix in order to access every node
-                              # mainly for using with Injector
         self.matrix = DoubleList()
         for e in range(size):
             self.matrix.append(DoubleList())

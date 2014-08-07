@@ -3,6 +3,7 @@ Created on Aug 6, 2014
 
 @author: andrea
 '''
+import copy
 from DoubleList import DoubleList
 from Board import Board
 from GameRules import GameRules
@@ -19,12 +20,8 @@ if __name__ == '__main__':
     
     for e in wer.get_node_list():
         e.toggle_life()
-    
     print (wer)
     
-    print(wer[2][2].is_alive())
-    print(wer[2][2].count_live_neighbors(wer))
-    print (wer)
     
-    print(wer[2][2].is_alive())
-    print(wer[2][2].count_live_neighbors(wer))
+    
+    

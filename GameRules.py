@@ -4,11 +4,11 @@ class GameRules(object):
     something then just change one of this parameters
     '''
     
-    # define the number of neighbors the cell needs to be born
+    # define the exact number of neighbors the cell needs to be born
     cells_for_reproduction = 3
     
-    # maximum number of neighbors before the cell dies because of overpopulation
-    cells_for_overpopulation = 3 #or more
+    # if the neighbors are more than this then the cell dies because of overpopulation
+    cells_for_overpopulation = 3 # more than
     
     # number of neighbors that cause underpopulation
     cells_for_underpopulation = 2 # or less
@@ -22,8 +22,8 @@ class GameRules(object):
     # how many cells does injector alter each time it acts
     injector_actions = 4
     
-    # time in ms between each generation
-    time_between_gen = 1000
+    # time in s between each generation
+    time_between_gen = 3
     
     # size of the grid, it's a square so it'll be x*x
     grid_size = 5
