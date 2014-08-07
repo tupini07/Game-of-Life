@@ -61,8 +61,8 @@ class LifeNode(object):
     def __str__(self):
         # if you have a better idea for this icons then you are welcomed to 
         # changed them
-        #if self.alive:
-         #   return '▓'
-        #else:
-         #   return '░'
-        return "(" +str(self.x_pos) + "," + str(self.y_pos) + ")"
+        if self.alive:
+            return '▓'
+        else:
+            return '░'
+        #return "(" +str(self.x_pos) + "," + str(self.y_pos) + ")"
