@@ -14,7 +14,7 @@ class GameRules(object):
     cells_for_underpopulation = 2 # or less
 
     # if the injector function should be on or not
-    injector = True
+    injector = False
     
     # how many generations pass before injector acts
     injector_gens = 3
@@ -23,8 +23,8 @@ class GameRules(object):
     injector_actions = 4
     
     # time in s between each generation
-    time_between_gen = 3
+    time_between_gen = 1
     
     # size of the grid, it's a square so it'll be x*x
-    grid_size = 5
+    grid_size = 10
         

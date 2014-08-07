@@ -50,7 +50,7 @@ class Game(object):
             elif neighbors > GameRules.cells_for_overpopulation and node.is_alive():
                 node.die()
                 self.died_cells += 1
-            elif neighbors <= GameRules.cells_for_underpopulation and node.is_alive():
+            elif neighbors < GameRules.cells_for_underpopulation and node.is_alive():
                 node.die()
                 self.died_cells += 1
                 
@@ -62,6 +62,13 @@ class Game(object):
     
     def run_injector(self):
         self.injector.inject(self.main_board)
+        
+    def toggle_cel(self, x, y):
+        '''
+        This is for manually changing the state of a cell
+        keep in mind that this alters the state of the 0 generation
+        '''
+        self.main_board.get_board()[y][x].toggle_life()
     
         
             

@@ -3,7 +3,7 @@ from  Board import Board
 
 
 if __name__ == '__main__':
-    gamee = Game()
+    gamee = Game()   
     gamee.start()
     
     
