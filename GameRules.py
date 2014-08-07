@@ -14,13 +14,13 @@ class GameRules(object):
     cells_for_underpopulation = 2 # or less
 
     # if the injector function should be on or not
-    injector = False
+    injector = True
     
     # how many generations pass before injector acts
     injector_gens = 3
     
     # how many cells does injector alter each time it acts
-    injector_actions = 4
+    injector_actions = 12
     
     # time in s between each generation
     time_between_gen = 1
