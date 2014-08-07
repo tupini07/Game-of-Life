@@ -54,11 +54,15 @@ class LifeNode(object):
     
     def get_age(self):
         return self.age
+    
+    def count_live_neighbors(self):
+        pass
             
     def __str__(self):
         # if you have a better idea for this icons then you are welcomed to 
         # changed them
-        if self.alive:
-            return '▓'
-        else:
-            return '░'
+        #if self.alive:
+         #   return '▓'
+        #else:
+         #   return '░'
+        return "(" +str(self.x_pos) + "," + str(self.y_pos) + ")"

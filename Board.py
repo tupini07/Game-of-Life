@@ -12,11 +12,14 @@ class Board(object):
         Constructor
         '''
         self.node_array = []  # so it doesn't have to scan all the matrix in order to access every node
-        self.matrix = []
+                              # mainly for using with Injector
+        self.matrix = DoubleList()
         for e in range(size):
             self.matrix.append(DoubleList())
             for i in range(size):
-                self.matrix[e].append(LifeNode(i, e))
+                node = LifeNode(i, e)
+                self.matrix[e].append(node)
+                self.node_array.append(node) # a list with pointers, each of them pointing to one node
     
     
     def get_node_list(self):
@@ -24,6 +27,11 @@ class Board(object):
     
     def get_board(self):
         return self.matrix
+    
+    
+    def __iter__(self):
+        for row in self.matrix:
+            yield row
     
     def __str__(self):
         ster = ""
