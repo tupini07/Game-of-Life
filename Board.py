@@ -28,7 +28,11 @@ class Board(object):
     def get_board(self):
         return self.matrix
     
-    
+    # to enable custom indexing
+    def __getitem__(self, key):
+        return self.matrix[key]
+        
+    #to enable iteration
     def __iter__(self):
         for row in self.matrix:
             yield row

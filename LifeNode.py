@@ -55,8 +55,16 @@ class LifeNode(object):
     def get_age(self):
         return self.age
     
-    def count_live_neighbors(self):
-        pass
+    def count_live_neighbors(self, board):
+        count = 0 
+        variations = [-1,0,1]
+        for var_x in variations:
+            for var_y in variations:
+                if board[self.y_pos - var_y][self.x_pos - var_x].is_alive():
+                    count += 1
+        if self.alive:#this function will also count the self, so that's why we need to subtract that value
+            count -= 1
+        return count
             
     def __str__(self):
         # if you have a better idea for this icons then you are welcomed to 
