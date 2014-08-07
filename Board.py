@@ -1,5 +1,7 @@
-from LifeNode import LifeNode
 from DoubleList import DoubleList
+from LifeNode import LifeNode
+
+
 class Board(object):
     '''
     This is the matrix representation of the board, and it has all the functions

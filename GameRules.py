@@ -17,7 +17,7 @@ class GameRules(object):
     injector = True
     
     # how many generations pass before injector acts
-    injector_gens = 20
+    injector_gens = 3
     
     # how many cells does injector alter each time it acts
     injector_actions = 4
