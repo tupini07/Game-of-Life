@@ -1,0 +1,5 @@
+*.pyc
+Game-of-Life/
+.project
+.pydevproject
+
