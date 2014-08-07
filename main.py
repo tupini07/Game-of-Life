@@ -24,6 +24,11 @@ which is what we know as cell, the Injector, that randomly toggles cells on and 
 that contains all the logic necessary for the game to work, and the GameRules which specify different
 parameters for the game (like under-population, over-population, etc.).
 
+I've done my best to keep it simple as possible (and making things much longer then necessary for 
+the purpose of making it comprehensible to people who don't know how the game works) and to document
+everything that needs documenting. However if you find something that you can explain better or that
+needs to be explained and it is not then you are invited to do it :) .
+
 If you want to know more visit: http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
 '''
 
