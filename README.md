@@ -1,5 +1,4 @@
 <h1>Game of Life<h1>
-============
 
 The universe of the Game of Life (invented by British mathematician John Horton Conway in 1970) 
 is an infinite two-dimensional orthogonal grid of square cells, each of which is in one of two
@@ -28,3 +27,10 @@ This is a list of things that will be nice to do some day.
 <li>Display the age of each cell, maybe using colors to indicate youngest/oldest</li>
 <li>Make a real interface, for the moment it works just in the terminal and it'll be nice to have a GUI (maybe TkInter?)
 </ul>
+
+<h2>How To Run</h2>
+It's very simple to run this program, the only thing you need to do is go to your console and navigate to the project's folder, then:
+
+    python main.py
+    
+And that's it! Remember to edit the GameRules file if you want some special parameters
