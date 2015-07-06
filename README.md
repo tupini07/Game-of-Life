@@ -33,4 +33,4 @@ It's very simple to run this program, the only thing you need to do is go to you
 
     python main.py
     
-And that's it! Remember to edit the GameRules file if you want some special parameters and the main.py file to set any initial state you would like.
+And that's it! Remember to edit the `GameRules` file if you want some special parameters and the `main.py` file to set any initial state you would like.
