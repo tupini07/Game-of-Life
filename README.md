@@ -1,4 +1,4 @@
-<h1>Game of Life<h1>
+<h1>Game of Life</h1>
 
 The universe of the Game of Life (invented by British mathematician John Horton Conway in 1970) 
 is an infinite two-dimensional orthogonal grid of square cells, each of which is in one of two
